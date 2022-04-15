@@ -9,3 +9,9 @@ cask 'goto-app-applesilicon' do
 
   app "GoTo.app"
 end
+uninstall quit: "Goto"
+
+  zap trash: [
+    "~/Library/Application Support/GoTo"
+  ]
+end
